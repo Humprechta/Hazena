@@ -11,22 +11,49 @@
 </head>
 <body>
 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Přípravka</a>
+  <a href="#">Minižáci</a>
+  <a href="#">Mladší žáci</a>
+  <a href="#">Starší dorost</a>
+  <a href="#">Mladší dorost</a>
+  <a href="#">Starší dorost</a>
+  <a href="#">A-TÝM</a>
+</div>
+
 <div class="topnav" id="myTopnav">
   <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <a href="#news"  onclick="openNav()">Týmy</a>
+  <a href="#contact">Mládež</a>
+  <a href="#about">Klub</a>
+   <a href="#about">Akademie</a>
+    <a href="#about">Fanshop</a>
+	
   <a href="#myTopnav" class="icon"  onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
 
 </div>
-<a><img  src="pozvanka.png" alt="pozvanka"></a>
+<a><img class = "pozvanka" src="pozvanka.png" alt="pozvanka"></a>
+</div>
+<div class="centerNovinky">
+<a href="#prenos">Přímý přenos zde <i class="fa fa-video-camera" aria-hidden="true"></i> | </a><a>Další zápas bude za </a><a id="demo"></a>
 </div>
 
 <div class="flex">
 <div class="MainContent">
+
+<div class="novinky">
+<div>
+<h3 class="Nadpis">Upozornění</h3>
+<p class="novinkyTxT">V sobotu 4.12.2021 se naše Áčko rozloučilo s podzimní částí druhé ligy porážkou od Českých Budějovic. V přímém souboji o naději na postup do první ligy jsme neobstáli. Od začátku zápasu nás trápila především koncovka...</p>
+<a href="https://www.seznam.cz/" class="button">Číst dále</a>
+</div>
+</div>
+
+<br>
 
 <div class="novinky">
 <img class ="imgss" src="Obrazek1.jpg" alt="Havlickuv Brod 12.9.2021" loading="lazy">
@@ -70,13 +97,35 @@
 
 </div>
 <div class="SideContent">
-<img id="scm" src="SCMLogo.png" alt="SCM">
+<img src="logo.png" style="margin:5px;width:^5px;">
+<hr>
+<h2>Podporují nás</h2>
+<a href="https://www.seznam.cz/"><img id="scm" src="SCMLogo.png" alt="SCM"></a>
+<a href="https://www.seznam.cz/"><img id="NSA" src="NSA.png" alt="SCM"></a>
+<a href="https://www.seznam.cz/"><img id="NSA" src="uvalyMesto.png" alt="SCM"></a>
+<hr>
   <h2>Přihláška</h2>
-  <p>Přihlášku do klubu stáhněte zde. Vyplňte ji, prosím, elektronicky a spolu s fotkou průkazového typu ji zašlete na adresu tomas.skrivan@hazena-uvaly.cz.</p>
+  <p>Přihlášku do klubu stáhněte <a class = "prihlaskaDowl">Zde</a>. Vyplňte ji, prosím, elektronicky a spolu s fotkou průkazového typu ji zašlete na adresu tomas.skrivan@hazena-uvaly.cz.</p>
+<hr>
+<h2>Proč k nám?</h2>
+<a href="https://www.seznam.cz/"><img id = "lokace" src="lokace.png" alt="SCM"></a>
+
 </div>
 </div>
 
 
+<div class="centerFooter">
+<div class ="flexFooter">
+
+<p><img src="logo.png" style="margin:5px;width:55px;"</p>
+<div>
+<p>@Hazena Uvaly</p>
+<p>odkazy.</p>
+<p><i class="fab fa-instagram"style="margin:-10px;width:35px;height:35px;font-size:22px"></i> <i class="fab fa-facebook-f"style="width:35px;height:35px;font-size:22px"></i><i class="fab fa-youtube"style="width:35px;height:35px;font-size:22px"></i> </p>
+
+</div>
+</div>
+</div>
 
 
 
