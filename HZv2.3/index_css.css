@@ -54,25 +54,28 @@ display: flex;
 }
 .novinky:hover {
   background-color: #ddd;
-  color: rgba(230, 0, 0,0.9);
+  color: #e00000;
   border: 2px solid rgba(128,128,128,1);
 }
 
 .novinkyTxT{ 
-color: rgba(230, 0, 0,0.9);
+color: #e00000);
 }
 
 
 .SideContent{
-	margin: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	border-radius: 5px;
 	min-height: 500px;
 	/*margin: auto;*/
 	padding-top: 50px;
   width: 20%;
-  background-color: rgba(230, 0, 0,0.9);
+  background-color: #e00000;
 }
-
+.SideContent p{
+  margin: 20px;
+}
 
 hr{
 	color: white;
@@ -84,12 +87,18 @@ h2{
 }
 
 #scm {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom:3px;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 5px;
   width: 170px;
 }
 #NSA {
+	margin-bottom:3px;
+	margin-left: 20px;
+	margin-right: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 5px;
@@ -109,7 +118,7 @@ h2{
 	top: 0;
 	width: 100%;
   overflow: hidden;
-  background-color: grey;
+  background-color: black;
 }
 
 .topnav a {
@@ -129,7 +138,7 @@ h2{
 }
 
 .topnav a.active {
-  background-color: rgba(230, 0, 0,0.9);
+  background-color: #e00000;
   color: white;
 }
 
@@ -138,6 +147,9 @@ h2{
 }
 
 @media screen and (max-width: 700px) {
+	.pozvanka {
+	padding-top: 0px;
+		}
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -209,7 +221,7 @@ h2{
 
 /*TLACITKA*/ /*--------------------------------------------------------------------*/
 .button {
-  background-color: rgba(230, 0, 0,0.9);
+  background-color: #e00000;
   border-radius: 5px;
   border: none;
   color: white;
@@ -227,24 +239,28 @@ h2{
 
 .centerNovinky{
 	position: relative;
-	top: -10px;
-	margin:0px;
+	top: -4px;
+	margin:01x;
   font-size: 20px;
   text-align: center;
   margin: auto;
-  width: 99%;
+  width: 100%;
   background-color: black;
   color: white;
-  padding: 20px;	
+		padding-bottom:20px;
+		
 	}
+
 	.centerFooter{
   font-size: 15px;
   text-align: center;
   margin: auto;
   width: 99%;
-  background-color: black;
+  background-color: #222222;
   color: white;
-  padding: 20px;	
+  padding-left: 20px;
+padding-top: 20px;
+padding-bottom: 2Opx;  
 	}
 	
 	a {
@@ -252,7 +268,20 @@ h2{
   color: white;
 }
 #demo{
-  color: rgba(230, 0, 0,0.9);
+  color: #e00000;
+}
+
+/*nahoruu odkazem*/
+#nahoruu {
+
+  position: fixed;
+  bottom: 15px;
+  right: 25px;
+}
+#nahoruu a {
+		
+	font-size: 33px;
+  text-decoration: none;
 }
 
 	/*GALERRY*/ /*--------------------------------------------------------------------*/
