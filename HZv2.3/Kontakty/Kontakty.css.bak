@@ -16,7 +16,7 @@ body {
 .pozvanka {
 	 margin-left: auto;
   margin-right: auto;
-	padding-top: 46px;
+	padding-top: 32px;
 	width: 100%;
 		}
 
@@ -38,11 +38,17 @@ body {
 
 .MainContent{
 
-	padding-top: 50px;
   width: 75%;
   /*border: 3px solid #73AD21;*/
 
 }
+.textos{
+
+  width: 75%;
+  border: 3px solid #73AD21;
+
+}
+
 
 .novinky{
 	background-color: rgb(229, 232, 232 );
@@ -118,7 +124,7 @@ h2{
 	top: 0;
 	width: 100%;
   overflow: hidden;
-  background-color: black;
+ background: linear-gradient(90deg, rgba(1,1,1,1) 0%, rgba(4,4,4,1) 50%, rgba(2,2,2,0.49670290479473034) 75%, rgba(0,0,0,0) 100%);
 }
 
 .topnav a {
@@ -187,7 +193,7 @@ h2{
   z-index: 1;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to bottom right, rgba(230, 0, 0,0.9),rgba(229, 232, 232,0.7 ));
+background: linear-gradient(90deg, rgba(121,9,9,1) 2%, rgba(113,8,8,0.6283555658591562) 50%, rgba(80,55,55,0.2810166302849265) 76%, rgba(71,44,44,0.09614268070509457) 88%);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -239,18 +245,20 @@ h2{
 
 .centerNovinky{
 	position: relative;
-	top: -4px;
-	margin:01x;
+	top: 0px;
+	padding-top:33px;
   font-size: 20px;
   text-align: center;
   margin: auto;
   width: 100%;
-  background-color: black;
+  background-color: rgba(236, 236, 236,8);
   color: white;
 		padding-bottom:20px;
 		
 	}
-
+.centerNovinky a{
+color: black;
+	}
 	.centerFooter{
   font-size: 15px;
   text-align: center;
@@ -300,11 +308,11 @@ padding-bottom: 2Opx;
 
 /* The Modal (background) */
 .modal {
-margin-top: 40px;	
+	
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 50px; /* Location of the box */
+  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -316,27 +324,24 @@ margin-top: 40px;
 
 /* Modal Content (image) */
 .modal-content {
+	
   margin: auto;
   display: block;
-  width: 50%;
+  width: 80%;
   max-width: 700px;
-  border-style: solid;
-  border-color: red;
 }
 
 /* Caption of Modal Image */
 #caption {
-	font-size: 19px;
+	
   margin: auto;
   display: block;
-  width: 45%;
+  width: 80%;
   max-width: 700px;
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  height: 300px;
-   border-style: solid;
-  border-color: green;
+  height: 150px;
 }
 
 /* Add Animation */
@@ -362,6 +367,7 @@ margin-top: 40px;
 
 /* The Close Button */
 .close {
+	
   position: absolute;
   top: 51px;
   right: 35px;
@@ -373,8 +379,10 @@ margin-top: 40px;
 
 .close:hover,
 .close:focus {
-	color: red;
-  font-size: 50px;
+	
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* 100% Image Width on Smaller Screens */
@@ -385,11 +393,5 @@ margin-top: 40px;
 	max-height:1000px;
 	padding: 5px;
 }
-.modal-content {
-	width:100%;
-	}
-	#caption {
-		width:100%;
-		}
 }
 	/*/GALLERY*/

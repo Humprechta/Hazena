@@ -1,6 +1,4 @@
 
-
-
 /*navigation bar*/
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -19,10 +17,9 @@ var modal = document.getElementById("myModal");
 var img = document.getElementsByClassName("imgss");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-//-webkit-filter: blur(2px);
-var value = 99;
+
   for (var i = 0; i < img.length; i++) {
-    img[i].onclick = function(){	
+    img[i].onclick = function(){
 	modal.style.display = "block";
 	modalImg.src = this.src;
 	captionText.innerHTML = this.alt;
