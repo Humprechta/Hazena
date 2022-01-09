@@ -201,6 +201,9 @@ h2{
   display: block;
   transition: 0.3s;
 }
+.text p {
+  text-align: center;
+}
 
 .sidenav a:hover {
   color: grey;
@@ -418,7 +421,7 @@ margin-bottom:3px;
 }
 #txtFoto{
 	display: none;
-	margin-left: 50%;
+	margin-left: 25%;
 }
 
 /* 100% Image Width on Smaller Screens */

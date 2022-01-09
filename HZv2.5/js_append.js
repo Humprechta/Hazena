@@ -14,9 +14,11 @@ let zkTxT = "";
 let zkTxTGene = "";
 let users = "";
 let psswds = "";
+let pocet = 0;
 
 var x = document.getElementById("ChcuPridat");
 	x.style.display = "none";
+
 
 function myFunctionPrihlas() {
   
@@ -35,18 +37,28 @@ function myFunctionPrihlas() {
   }
 }
 
+document.getElementById("Remove").style.display = "none";
 document.getElementById("Upload").style.display = "none";
 
 $("#ChcuPridat").click(function(){
 		var x = document.getElementById("ChcuPridat");
 	x.style.display = "none";
-	document.getElementById("Upload").style.display = "block";
   $("f").append("<br>Nadpis: <textarea id='Nadpis'>");
 $("f").append("<br>Text: <textarea id='TextOS'>");
 $("f").append("<br>Goly: <textarea id='Goly'>");
-$("f").append("<br>Misto&čas: <textarea id='Misto'>");
+$("f").append("<br>Skore br datum: <textarea id='Misto' value='' placeholder='skore kdo proti komu <br> datum'>");
 $("f").append("<br>Tym:  <select name='cars' id='tymos'><option value='Přípravka'>Přípravka</option><option value='Minižáci'>Minižáci</option><option value='Mladší žáci'>Mladší žáci</option><option value='Starší žáaci'>Starší žáaci</option><option value='Mladší dorost'>Mladší dorost</option><option value='Starší dorost'>Starší dorost</option><option value='Muži A'>Muži A</option><option value='Muži B'>Muži B</option></select>");
 $("f").append("<p>URL Obrazku: <input type='text' id='URL' value=''></p>");
+$("f").append("<hr><p>Index Pro Smazání: <input type='text' id='smazID' value=''placeholder='0'></p>");
+
+document.getElementById("Upload").style.display = "block";
+document.getElementById("Remove").style.display = "block";
+});
+
+$("#Remove").click(function(){
+	let smaz ="#"
+	smaz += $("#smazID").val();
+$( smaz ).remove();
 });
 
 $("#Upload").click(function(){
@@ -58,23 +70,27 @@ if(zkTxT.length >= 200){
 if(zkTxT.length >= 1301){
 	document.getElementById("caption").style.fontSize = "14px";
 }
-for (var i = 0; i < 200; i++) {
-	  
-	  
+for (var i = 0; i < 200; i++) {  
     zkTxTGene += zkTxT[i]	;
-
 	}
+	
 	zkTxTGene += "..."
+	
 	}else{
 	zkTxTGene = zkTxT;
-}
-
+	}
 
 gols = $("#Goly").val();
 urls = $("#URL").val();
  mistos = $("#Misto").val();
 tymos = $("#tymos").val();
-$("g").append("<div class='novinky' id='testJS1'><img class ='imgss' src="+urls+" alt='<h4>"+nadpiss+"</h4>"+texts+"<br><br><i>"+gols+"</i>'><div><p class='red'>"+tymos+"</p><p class='Nadpis'>"+nadpiss+"</p><p class='text'>"+zkTxTGene+"</p></div></div>");
+
+$("g").append("<div id="+pocet+"><div class='novinky' id='testJS1' style='margin-top:25px;text-align: center;'><img class ='imgss' src="+urls+" alt='<h4>"+nadpiss+"</h4>"+texts+"<br><br><i>"+gols+"</i>'><div><p class='red'>"+tymos+"</p><p class='Nadpis'>"+mistos+"</p><p class='text' style='text-align: center;'>"+nadpiss+"</p><p class='text'>"+zkTxTGene+"</p></div><p class='nevidim'>ID: "+pocet+"</p></div></div>");
+pocet ++;
+zkTxTGene =""; //reset
+
+
+
 function load_js()
    {
       var head= document.getElementsByTagName('head')[0];

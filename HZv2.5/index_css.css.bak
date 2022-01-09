@@ -10,7 +10,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-color: rgba(236, 236, 236,8);
-  background-size: 100px 120px;
+  background-size: 100px 129px;
 }
 
 .pozvanka {
@@ -46,11 +46,12 @@ body {
 
 .novinky{
 	background-color: rgb(229, 232, 232 );
-	margin: 9px;
 	border-radius: 5px;
 	border: 2px solid rgba(128,128,128,0.3);
 display: flex;
   align-items: center;
+  text-align: center;
+  margin: auto;
 }
 .novinky:hover {
   background-color: #ddd;
@@ -59,9 +60,10 @@ display: flex;
 }
 
 .novinkyTxT{ 
+  padding:20px;
 color: #e00000);
+margin: auto;
 }
-
 
 .SideContent{
 	margin-top: 10px;
@@ -158,6 +160,7 @@ h2{
 	.MainContent{width:100%;} 
 	.SideContent{width:100%;} 
 	p.text {display: none;}
+	p.red {display: none;}
   
 
 	#scm{
@@ -216,8 +219,25 @@ h2{
   .sidenav a {font-size: 18px;}
 }
 
+input[type=text],[type=password] {
+  width: 60%;
+  padding: 7px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 /*TLACITKA*/ /*--------------------------------------------------------------------*/
-.button {
+
+#prihlasit{
+	background-color: black;
+}
+#prihlasit:hover{
+	background-color: grey;
+}
+button {
   background-color: #e00000;
   border-radius: 5px;
   border: none;
@@ -230,7 +250,7 @@ h2{
   margin: 2px 1px;
   cursor: pointer;
 }
-.button:hover {
+button:hover {
   background-color: pink;
 }
 
@@ -270,16 +290,17 @@ padding-bottom: 2Opx;
 
 /*nahoruu odkazem*/
 #nahoruu {
-
   position: fixed;
   bottom: 15px;
   right: 25px;
   display: none;
 }
-#nahoruu a {
-		
+#nahoruu a {		
 	font-size: 33px;
-  text-decoration: none;
+}
+#nahoruu a:hover {
+color: black;
+font-size: 40px;
 }
 
 	/*GALERRY*/ /*--------------------------------------------------------------------*/
@@ -316,30 +337,35 @@ margin-top: 40px;
 .modal-content {
   margin: auto;
   display: block;
-  width: 50%;
-  max-width: 700px;
+  width: 48%;
+  max-width: 1000px;
 
   border-radius:6px;
 }
 
 /* Caption of Modal Image */
 #caption {
-	font-size: 17px;
-  margin: auto;
+	font-size: 16px;
   display: block;
-  width: 45%;
-  max-width: 700px;
+  width: 48%;
+  max-width: 1000px;
   text-align: left;
   color: #ccc;
   padding: 5px 0;
   height: 350px;
+   /*-style: solid;
+  border-color: red;*/
 
 }
-#caption h4{
+#caption h4,h3{
+	text-align: center;
 	margin:0px;
 margin-bottom:3px;
-
 }
+.red{
+	color: red;
+	}
+	
 .TextKTematu {
 	font-size: 17px;
   margin: auto;
@@ -392,7 +418,7 @@ margin-bottom:3px;
 }
 #txtFoto{
 	display: none;
-	margin-left: 50%;
+	margin-left: 25%;
 }
 
 /* 100% Image Width on Smaller Screens */
